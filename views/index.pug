@@ -1,0 +1,8 @@
+extends ./layouts/main
+
+block content
+    form(action="/parse" method="post")
+      .form-group
+        label URL
+        input.form-control(type="text" name="url" placeholder="url")
+      button.btn.btn-primary(type="submit") Send

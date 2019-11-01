@@ -1,0 +1,7 @@
+extends ./layouts/main
+
+block content
+  if error 
+    .alert.alert-dismissible.alert-danger= error
+  br
+  a(href="/") Back
